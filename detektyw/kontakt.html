@@ -2,50 +2,64 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Kontakt - Severus DETEKTYW</title>
+    <title>Kontakt - CBŚ SEVERUS</title>
     <style>
         body { background: #111; color: #ccc; font-family: 'Georgia', serif; margin: 0; }
         nav { background: #000; padding: 20px; border-bottom: 1px solid #333; display: flex; justify-content: space-between; }
-        .logo { color: #d4af37; font-size: 1.5em; text-decoration: none; text-transform: uppercase; }
-        .menu a { color: #fff; margin-left: 20px; text-decoration: none; font-family: sans-serif; font-size: 0.9em; }
+        .logo { color: #d4af37; font-size: 1.5em; text-decoration: none; font-weight: bold; }
+        .menu a { color: #fff; margin-left: 20px; text-decoration: none; font-family: sans-serif; font-size: 0.9em; text-transform: uppercase; }
+
+        .container { max-width: 700px; margin: 60px auto; padding: 40px; border: 1px solid #333; background: #0a0a0a; text-align: center; }
+        h1 { color: #d4af37; font-family: sans-serif; text-transform: uppercase; }
         
-        .container { max-width: 600px; margin: 80px auto; text-align: center; border: 1px solid #d4af37; padding: 40px; }
-        h2 { color: #fff; font-family: sans-serif; text-transform: uppercase; letter-spacing: 2px; }
-        .warning { color: #888; font-size: 0.8em; margin-top: 30px; font-style: italic; }
-        .phone { font-size: 2em; color: #d4af37; margin: 20px 0; font-weight: bold; }
-        .app-links { margin-top: 20px; }
-        .app-btn { background: #333; color: white; padding: 10px 20px; text-decoration: none; font-family: sans-serif; font-size: 0.9em; margin: 0 5px; }
-        .app-btn:hover { background: #d4af37; color: black; }
+        .info-txt { margin-bottom: 30px; font-style: italic; color: #888; }
+        
+        input, textarea, select { width: 100%; padding: 15px; margin-bottom: 15px; background: #222; border: 1px solid #444; color: #fff; box-sizing: border-box; }
+        button { background: #d4af37; color: #000; padding: 15px 40px; border: none; font-weight: bold; cursor: pointer; width: 100%; text-transform: uppercase; }
+        button:hover { background: #c5a028; }
+
+        .secure-note { margin-top: 30px; font-size: 0.8em; color: #555; }
     </style>
 </head>
 <body>
+
 <nav>
-    <a href="index.html" class="logo">Severus Detektyw</a>
+    <a href="index.html" class="logo">CBŚ SEVERUS</a>
     <div class="menu">
-        <a href="onas.html">Licencja</a>
-        <a href="oferta.html">Oferta</a>
-        <a href="kontakt.html" style="color: #d4af37;">Szyfrowany Kontakt</a>
-        <a href="../index.html">(Powrót)</a>
+        <a href="onas.html">O nas</a>
+        <a href="oferta.html">Zakres Usług</a>
+        <a href="kontakt.html" style="color: #d4af37;">Kontakt 24/7</a>
+        <a href="../index.html">(Exit)</a>
     </div>
 </nav>
 
 <div class="container">
-    <h2>Skontaktuj się bezpiecznie</h2>
-    <p>Dbając o dyskrecję Twojej sprawy, sugerujemy kontakt poprzez szyfrowane komunikatory.</p>
-    
-    <div class="phone">+48 600 000 000</div>
-    
-    <div class="app-links">
-        <a href="#" class="app-btn">Napisz na Signal</a>
-        <a href="#" class="app-btn">Napisz na WhatsApp</a>
-    </div>
+    <h1>Poufna Konsultacja</h1>
+    <p>Do każdego zlecenia podchodzimy w sposób butikowy. Nie stosujemy szablonów.</p>
+    [cite_start]<p class="info-txt">Opisz nam krótko swój problem - bezpłatnie podpowiemy, jakie działania będą skuteczne.</p>
 
-    <p style="margin-top: 40px;">Email: biuro@severus-detektyw.pl</p>
+    <form action="https://formsubmit.co/TWOJ_MAIL@FIRMA.PL" method="POST">
+        <input type="text" name="imie" placeholder="Imię / Pseudonim" required>
+        <input type="email" name="email" placeholder="Bezpieczny adres Email" required>
+        <input type="text" name="telefon" placeholder="Telefon (opcjonalnie)">
+        
+        <select name="kategoria">
+            <option value="rodzinne">Sprawy Rodzinne / Zdrady</option>
+            <option value="biznes">Wywiad Gospodarczy</option>
+            <option value="cyber">Informatyka Śledcza</option>
+            <option value="majątek">Poszukiwanie Majątku</option>
+            <option value="inne">Inne</option>
+        </select>
 
-    <div class="warning">
-        * Jeśli obawiasz się, że Twój telefon jest monitorowany, skontaktuj się z nami z bezpiecznego urządzenia (np. telefon na kartę pre-paid).
+        <textarea name="wiadomosc" rows="5" placeholder="Opisz sprawę (Twoje dane są chronione tajemnicą zawodową)..."></textarea>
+        
+        <button type="submit">WYŚLIJ ZGŁOSZENIE (SZYFROWANE)</button>
+    </form>
+
+    <div class="secure-note">
+        Jesteśmy dyspozycyjni 24/7. Gwarantujemy pełną dyskrecję na każdym etapie współpracy.
     </div>
 </div>
+
 </body>
 </html>
-
