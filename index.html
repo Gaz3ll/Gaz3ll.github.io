@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupa SEVERUS - Centrala</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: #fff; }
+        
+        header { 
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center; padding: 100px 20px; text-align: center; border-bottom: 4px solid #d4af37;
+        }
+        h1 { font-size: 3.5em; margin: 0; letter-spacing: 5px; text-transform: uppercase; color: #d4af37; }
+        p { color: #ccc; font-size: 1.2em; margin-top: 15px; }
+
+        .container { max-width: 1400px; margin: 50px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        
+        .card { background: #2a2a2a; border-radius: 8px; overflow: hidden; transition: transform 0.3s; display: flex; flex-direction: column; border: 1px solid #444; }
+        .card:hover { transform: translateY(-10px); border-color: #d4af37; }
+        
+        .card-img { height: 200px; width: 100%; object-fit: cover; filter: grayscale(50%); transition: 0.3s; }
+        .card:hover .card-img { filter: grayscale(0%); }
+        
+        .card-body { padding: 25px; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .card h2 { color: #fff; margin: 10px 0; }
+        .desc { color: #aaa; font-size: 0.9em; margin-bottom: 20px; line-height: 1.5; }
+        
+        .btn { padding: 12px 0; width: 100%; text-decoration: none; color: white; font-weight: bold; text-transform: uppercase; border-radius: 4px; transition: 0.3s; }
+        
+        .btn-med { background: #c0392b; } /* Czerwony */
+        .btn-det { background: #2980b9; } /* Niebieski */
+        .btn-piercing { background: #8e44ad; } /* Fiolet */
+        .btn-ppoz { background: #e67e22; } /* Pomarańcz */
+        
+        .btn:hover { opacity: 0.8; }
+        
+        footer { text-align: center; padding: 40px; color: #666; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Grupa SEVERUS</h1>
+    <p>Cztery filary bezpieczeństwa i stylu</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" class="card-img">
+        <div class="card-body">
+            <h2>Medycyna</h2>
+            <p class="desc">Szkolenia KPP, zabezpieczenia medyczne i transport sanitarny.</p>
+            <a href="medyczne/index.html" class="btn btn-med">Wejdź</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1555376551-7e044d18084a?auto=format&fit=crop&w=800&q=80" class="card-img">
+        <div class="card-body">
+            <h2>Detektywistyka</h2>
+            <p class="desc">Dyskrecja, wywiad gospodarczy i sprawy rozwodowe.</p>
+            <a href="detektyw/index.html" class="btn btn-det">Wejdź</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1574926189973-448cb2d3dc40?auto=format&fit=crop&w=800&q=80" class="card-img">
+        <div class="card-body">
+            <h2>Piercing</h2>
+            <p class="desc">Profesjonalne przekłuwanie ciała, sterylność i autorska biżuteria.</p>
+            <a href="percing/index.html" class="btn btn-piercing">Wejdź</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1563608726-3029f64923e8?auto=format&fit=crop&w=800&q=80" class="card-img">
+        <div class="card-body">
+            <h2>PPOŻ</h2>
+            <p class="desc">Inspekcje gaśnic, szkolenia przeciwpożarowe i dokumentacja.</p>
+            <a href="ppoz/index.html" class="btn btn-ppoz">Wejdź</a>
+        </div>
+    </div>
+</div>
+
+<footer>&copy; 2023 Grupa SEVERUS</footer>
+</body>
+</html>

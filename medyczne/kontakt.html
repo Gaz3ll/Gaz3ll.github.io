@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt - Severus MED</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; color: #333; }
+        nav { background: #fff; border-bottom: 3px solid #e74c3c; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: bold; font-size: 1.5em; color: #e74c3c; text-decoration: none; }
+        .menu a { margin-left: 15px; text-decoration: none; color: #333; font-weight: bold; }
+        
+        .contact-wrap { max-width: 600px; margin: 50px auto; text-align: center; }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #e74c3c; color: white; border: none; padding: 15px 30px; font-size: 1.1em; cursor: pointer; border-radius: 4px; width: 100%; }
+        button:hover { background: #c0392b; }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html" class="logo">SEVERUS MED</a>
+    <div class="menu">
+        <a href="onas.html">O nas</a>
+        <a href="oferta.html">Zakres Usług</a>
+        <a href="kontakt.html" style="color:#e74c3c;">Kontakt</a>
+        <a href="../index.html">Powrót</a>
+    </div>
+</nav>
+
+<div class="contact-wrap">
+    <h1>Skontaktuj się z nami</h1>
+    <p>Masz pytania dotyczące szkolenia lub potrzebujesz karetki na event?</p>
+    
+    <form action="https://formsubmit.co/wiktorx32@gmail.com" method="POST">
+    
+    <input type="hidden" name="_next" value="https://twoja-strona.pl/medyczne/kontakt.html">
+    <input type="hidden" name="_captcha" value="false">
+
+    <div class="form-group">
+        <label>Imię i Nazwisko / Firma</label>
+        <input type="text" name="imie" required>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label>Rodzaj usługi</label>
+        <input type="text" name="usluga" placeholder="np. Zabezpieczenie imprezy">
+    </div>
+    <div class="form-group">
+        <label>Wiadomość</label>
+        <textarea name="wiadomosc" rows="5"></textarea>
+    </div>
+    
+    <button type="submit">WYŚLIJ</button>
+</form>
+    
+    <div style="margin-top: 40px; background: #eee; padding: 20px;">
+        <h3>Dyżur telefoniczny:</h3>
+        <p style="font-size: 1.5em; font-weight: bold; color: #e74c3c;">+48 123 456 789</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt - Severus INK</title>
+    <style>
+        body { background-color: #050505; color: #fff; font-family: 'Verdana', sans-serif; margin: 0; }
+        :root { --neon: #bf00ff; }
+        nav { padding: 20px 40px; border-bottom: 2px solid var(--neon); background: #000; display: flex; justify-content: space-between; }
+        .logo { font-size: 1.8em; font-weight: 900; color: #fff; text-shadow: 0 0 10px var(--neon); text-decoration: none; }
+        .menu a { color: #ccc; margin-left: 25px; text-decoration: none; text-transform: uppercase; font-size: 0.85em; }
+
+        .container { max-width: 600px; margin: 60px auto; text-align: center; }
+        .contact-box { border: 2px solid #333; padding: 40px; background: #111; border-radius: 10px; }
+        .contact-box:hover { border-color: var(--neon); box-shadow: 0 0 20px rgba(191, 0, 255, 0.2); }
+        
+        input, textarea { width: 100%; padding: 15px; margin: 10px 0; background: #000; border: 1px solid #333; color: white; box-sizing: border-box; }
+        button { background: var(--neon); color: white; border: none; padding: 15px 30px; font-weight: bold; cursor: pointer; width: 100%; text-transform: uppercase; margin-top: 10px; }
+        button:hover { background: #fff; color: var(--neon); }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html" class="logo">SEVERUS INK</a>
+    <div class="menu">
+        <a href="onas.html">Studio & Ekipa</a>
+        <a href="oferta.html">Cennik</a>
+        <a href="kontakt.html" style="color:var(--neon)">Rezerwacja</a>
+        <a href="../index.html">EXIT</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="contact-box">
+        <h2 style="color: var(--neon)">UMÓW WIZYTĘ</h2>
+        <p>Wypełnij formularz, oddzwonimy w celu potwierdzenia terminu.</p>
+        <form>
+            <input type="text" placeholder="Imię">
+            <input type="text" placeholder="Numer telefonu">
+            <select style="width: 100%; padding: 15px; background: #000; color: #aaa; border: 1px solid #333; margin: 10px 0;">
+                <option>Wybierz przekłucie...</option>
+                <option>Ucho</option>
+                <option>Nos</option>
+                <option>Inne</option>
+            </select>
+            <textarea rows="4" placeholder="Dodatkowe pytania / Preferowana data"></textarea>
+            <button type="button" onclick="alert('Zgłoszenie wysłane! (Demo)')">Wyślij</button>
+        </form>
+        <p style="margin-top: 30px; font-size: 0.8em; color: #666;">ul. Przykładowa 666, Warszawa</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Severus INK - Piercing Studio</title>
+    <style>
+        body { background-color: #050505; color: #fff; font-family: 'Verdana', sans-serif; margin: 0; padding: 0; }
+        /* Neonowe akcenty */
+        :root { --neon: #bf00ff; --dark: #1a1a1a; }
+        
+        a { text-decoration: none; transition: 0.3s; }
+        
+        nav { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--neon); background: #000; }
+        .logo { font-size: 1.8em; font-weight: 900; color: #fff; text-shadow: 0 0 10px var(--neon); letter-spacing: 2px; }
+        .menu a { color: #ccc; margin-left: 25px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px; }
+        .menu a:hover { color: var(--neon); text-shadow: 0 0 5px var(--neon); }
+        .exit-btn { border: 1px solid #333; padding: 5px 15px; border-radius: 20px; }
+
+        .hero { 
+            height: 80vh; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
+        
+        .hero h1 { font-size: 4em; margin: 0; text-transform: uppercase; letter-spacing: 5px; border: 3px solid var(--neon); padding: 20px 40px; transform: skew(-10deg); background: rgba(0,0,0,0.5); box-shadow: 0 0 20px var(--neon), inset 0 0 20px var(--neon); }
+        .hero p { font-size: 1.2em; color: #ccc; margin-top: 20px; letter-spacing: 2px; }
+        
+        .cta-btn { margin-top: 30px; padding: 15px 40px; background: var(--neon); color: white; font-weight: bold; font-size: 1.2em; border-radius: 50px; text-transform: uppercase; box-shadow: 0 0 15px var(--neon); }
+        .cta-btn:hover { background: #fff; color: var(--neon); }
+
+        footer { text-align: center; padding: 20px; color: #444; font-size: 0.8em; border-top: 1px solid #222; margin-top: auto; }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html" class="logo">SEVERUS INK</a>
+    <div class="menu">
+        <a href="onas.html">Studio & Ekipa</a>
+        <a href="oferta.html">Cennik</a>
+        <a href="kontakt.html">Rezerwacja</a>
+        <a href="../index.html" class="exit-btn">EXIT</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <h1>Body Piercing</h1>
+    <p>Professional & Sterile</p>
+    <a href="kontakt.html" class="cta-btn">Umów termin</a>
+</header>
+
+<footer>&copy; 2023 Severus Ink. Stay Sharp.</footer>
+</body>
+</html>
