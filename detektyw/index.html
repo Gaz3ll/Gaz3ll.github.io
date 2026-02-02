@@ -2,38 +2,62 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Severus DETEKTYW</title>
+    <title>CBŚ SEVERUS - Biuro Detektywistyczne</title>
     <style>
-        body { background: #111; color: #ccc; font-family: 'Georgia', serif; margin: 0; }
-        nav { background: #000; padding: 20px; border-bottom: 1px solid #333; display: flex; justify-content: space-between; }
-        .logo { color: #d4af37; font-size: 1.5em; text-decoration: none; letter-spacing: 2px; text-transform: uppercase; }
-        .menu a { color: #fff; margin-left: 20px; text-decoration: none; font-family: sans-serif; font-size: 0.9em; }
+        body { background: #111; color: #ccc; font-family: 'Georgia', serif; margin: 0; line-height: 1.6; }
+        nav { background: #000; padding: 20px; border-bottom: 1px solid #333; display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #d4af37; font-size: 1.5em; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
+        .menu a { color: #fff; margin-left: 20px; text-decoration: none; font-family: sans-serif; font-size: 0.9em; text-transform: uppercase; }
         .menu a:hover { color: #d4af37; }
-        
-        .hero { height: 60vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1920&q=80'); background-size: cover; display: flex; align-items: center; justify-content: center; text-align: center; }
-        .hero h1 { font-size: 3em; color: white; text-shadow: 0 2px 10px #000; }
-        
-        .content { padding: 50px 20px; max-width: 900px; margin: 0 auto; text-align: center; }
+
+        .hero { 
+            height: 85vh; 
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;
+        }
+        .hero h1 { font-size: 3em; color: white; margin-bottom: 20px; text-shadow: 0 2px 10px #000; }
+        .hero p { color: #d4af37; font-size: 1.4em; font-style: italic; max-width: 800px; }
+
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+        .feat-box { background: #1a1a1a; padding: 30px; border-top: 3px solid #d4af37; text-align: center; }
+        .feat-box h3 { color: #fff; margin-bottom: 15px; font-family: sans-serif; }
+
+        .btn { display: inline-block; margin-top: 30px; padding: 15px 40px; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; transition: 0.3s; }
+        .btn:hover { background: #d4af37; color: #000; }
     </style>
 </head>
 <body>
 
 <nav>
-    <a href="index.html" class="logo">Severus Detektyw</a>
+    <a href="index.html" class="logo">CBŚ SEVERUS</a>
     <div class="menu">
-        <a href="onas.html">Licencja</a>
-        <a href="oferta.html">Oferta</a>
-        <a href="kontakt.html">Szyfrowany Kontakt</a>
-        <a href="../index.html" style="color: #666;">(Powrót)</a>
+        <a href="onas.html">O nas</a>
+        <a href="oferta.html">Zakres Usług</a>
+        <a href="kontakt.html">Kontakt 24/7</a>
+        <a href="../index.html" style="color: #666;">(Exit)</a>
     </div>
 </nav>
 
 <header class="hero">
-    <h1>Prawda ukryta w cieniu</h1>
+    <h1>Prawda potrzebuje dowodów</h1>
+    <p>"Skuteczność potrzebuje profesjonalistów. W świecie pełnym niedomówień, my dostarczamy jasne odpowiedzi."</p>
+    <a href="oferta.html" class="btn">SPRAWDŹ JAK DZIAŁAMY</a>
 </header>
 
-<div class="content">
-    <p>Agencja detektywistyczna Severus oferuje pełną dyskrecję. Skorzystaj z menu powyżej, aby zapoznać się z naszymi metodami operacyjnymi.</p>
+<div class="features">
+    <div class="feat-box">
+        <h3>Dostępność 24/7</h3>
+        <p>Problemy nie czekają do poniedziałku. Działamy natychmiast, bez względu na porę dnia i nocy.</p>
+    </div>
+    <div class="feat-box">
+        <h3>Dowody Sądowe</h3>
+        <p>Przygotowujemy raporty będące rzetelnym materiałem dowodowym w sprawach sądowych i cywilnych.</p>
+    </div>
+    <div class="feat-box">
+        <h3>Nowoczesny Sprzęt</h3>
+        <p>Wykorzystujemy zaawansowaną analitykę i technologię operacyjną, by dotrzeć do prawdy szybciej.</p>
+    </div>
 </div>
 
 </body>
